@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeMaster Institute | Programming Courses</title>
+    <title>CodeMaster Institute | Programming Courses by Umesh Kumar</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
     <!-- Navigation -->
-<header>
+    <header>
         <nav class="navbar">
             <div class="nav-container">
                 <a href="index.html" class="logo">
@@ -20,10 +20,10 @@
                 
                 <div class="nav-menu">
                     <ul class="nav-links">
-                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
                         <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
                         <li class="dropdown">
-                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="nav-link"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown-content">
                                 <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
                                 <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
@@ -56,30 +56,51 @@
         </nav>
     </header>
 
-
-    <!-- Main Content (will be replaced by page content) -->
-    <main id="main-content">
-        <!-- Home Page Content -->
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">Master Programming with <span class="highlight">CodeMaster Institute</span></h1>
-                    <p class="hero-subtitle">Learn C, C++, Java, Python, Web Development and more from industry experts. Build your coding career with our comprehensive courses.</p>
+                    <h1 class="hero-title">Master Programming with <span class="highlight">Expert Guidance</span></h1>
+                    <p class="hero-subtitle">Learn C, C++, Java, Python, Web Development & more from Umesh Kumar with 8+ years of teaching experience</p>
                     <div class="hero-actions">
-                        <a href="#" class="btn btn-primary">Explore Courses</a>
-                        <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+                        <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+                        <a href="contact.html" class="btn btn-secondary">Free Demo Class</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Experienced Instructor</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Practical Learning</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Provided</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Programming on laptop">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Programming Learning">
+                    <div class="instructor-badge">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Umesh Kumar">
+                        <div>
+                            <h4>Umesh Kumar</h4>
+                            <p>8+ Years Teaching Experience</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
+        <!-- Courses Section -->
         <section class="courses">
             <div class="container">
-                <h2 class="section-title">Our <span class="highlight">Courses</span></h2>
-                <p class="section-subtitle">Comprehensive programming courses designed for beginners to advanced learners.</p>
+                <h2 class="section-title">Our <span class="highlight">Programming Courses</span></h2>
+                <p class="section-subtitle">Comprehensive courses designed for beginners to advanced learners</p>
                 
                 <div class="course-grid">
                     <div class="course-card">
@@ -87,8 +108,12 @@
                             <i class="fab fa-cuttlefish"></i>
                         </div>
                         <h3>C Programming</h3>
-                        <p>Learn fundamentals of programming with C. Perfect starting point for beginners.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Master fundamentals of programming with C. Perfect starting point for beginners.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 9,999</span>
+                        </div>
+                        <a href="course-c.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="course-card">
@@ -96,26 +121,38 @@
                             <i class="fab fa-cuttlefish"></i><i class="fas fa-plus plus-icon"></i>
                         </div>
                         <h3>C++ Programming</h3>
-                        <p>Master object-oriented programming with C++. Build efficient applications.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Learn object-oriented programming with C++. Build efficient applications.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 11,999</span>
+                        </div>
+                        <a href="course-cpp.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="course-card">
                         <div class="course-icon">
                             <i class="fab fa-java"></i>
                         </div>
-                        <h3>Java</h3>
-                        <p>Learn Java for enterprise applications, Android development and more.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h3>Java Programming</h3>
+                        <p>Build enterprise applications with Core Java and advanced concepts.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 13,999</span>
+                        </div>
+                        <a href="course-java.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="course-card">
                         <div class="course-icon">
                             <i class="fab fa-python"></i>
                         </div>
-                        <h3>Python</h3>
-                        <p>From basics to advanced concepts including data science and machine learning.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h3>Python Programming</h3>
+                        <p>From basics to advanced concepts including data science and automation.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 12,999</span>
+                        </div>
+                        <a href="course-python.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="course-card">
@@ -123,9 +160,13 @@
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-css3-alt"></i>
                         </div>
-                        <h3>HTML/CSS</h3>
-                        <p>Build beautiful, responsive websites with HTML5 and CSS3.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h3>Web Development</h3>
+                        <p>Build responsive websites with HTML5, CSS3, JavaScript and frameworks.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 14,999</span>
+                        </div>
+                        <a href="course-web.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="course-card">
@@ -133,8 +174,12 @@
                             <i class="fab fa-js-square"></i>
                         </div>
                         <h3>JavaScript</h3>
-                        <p>Master frontend development with modern JavaScript frameworks.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Master modern JavaScript for frontend and backend development.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 14,499</span>
+                        </div>
+                        <a href="course-js.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="course-card">
@@ -144,7 +189,11 @@
                         </div>
                         <h3>PHP & MySQL</h3>
                         <p>Learn server-side programming and database management for web apps.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 12,999</span>
+                        </div>
+                        <a href="course-php.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="course-card">
@@ -152,13 +201,84 @@
                             <i class="fas fa-laptop-code"></i>
                         </div>
                         <h3>Full Stack</h3>
-                        <p>Complete web development course covering frontend and backend technologies.</p>
-                        <a href="#" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Complete web development covering frontend and backend technologies.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 24 Weeks</span>
+                            <span><i class="fas fa-rupee-sign"></i> 28,999</span>
+                        </div>
+                        <a href="course-fullstack.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="center-button">
+                    <a href="courses.html" class="btn btn-primary">View All Courses</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Instructor Spotlight -->
+        <section class="instructor-spotlight">
+            <div class="container">
+                <div class="spotlight-content">
+                    <div class="spotlight-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Umesh Kumar">
+                        <div class="experience-badge">
+                            <div class="exp-number">8+</div>
+                            <div class="exp-text">Years Experience</div>
+                        </div>
+                    </div>
+                    
+                    <div class="spotlight-info">
+                        <h2 class="section-title">Learn from <span class="highlight">Umesh Kumar</span></h2>
+                        <p class="instructor-tagline">Experienced Programming Instructor with 8+ Years of Teaching</p>
+                        
+                        <div class="instructor-experience">
+                            <div class="exp-item">
+                                <i class="fas fa-school"></i>
+                                <div>
+                                    <h4>GLD Public School</h4>
+                                    <p>4 Years Teaching Experience</p>
+                                </div>
+                            </div>
+                            
+                            <div class="exp-item">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <h4>Govt. Laxmaneshwar College</h4>
+                                    <p>1 Year Teaching Experience</p>
+                                </div>
+                            </div>
+                            
+                            <div class="exp-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Shri Mahant Laldas College</h4>
+                                    <p>3 Years Teaching Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="instructor-description">With extensive experience teaching programming across schools and colleges, Umesh Kumar brings practical, industry-relevant knowledge to every class. His teaching methodology focuses on hands-on coding and real-world projects.</p>
+                        
+                        <div class="instructor-skills">
+                            <h4>Expertise Areas:</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C Programming</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Core Java</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Web Development</span>
+                                <span class="skill-tag">PHP & MySQL</span>
+                            </div>
+                        </div>
+                        
+                        <a href="faculty.html" class="btn btn-outline">View Full Profile</a>
                     </div>
                 </div>
             </div>
         </section>
         
+        <!-- Features Section -->
         <section class="features">
             <div class="container">
                 <h2 class="section-title">Why Choose <span class="highlight">CodeMaster?</span></h2>
@@ -168,8 +288,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-user-tie"></i>
                         </div>
-                        <h3>Expert Instructors</h3>
-                        <p>Learn from industry professionals with years of teaching experience.</p>
+                        <h3>Expert Instructor</h3>
+                        <p>Learn directly from Umesh Kumar with 8+ years of teaching experience across schools and colleges.</p>
                     </div>
                     
                     <div class="feature-card">
@@ -177,7 +297,7 @@
                             <i class="fas fa-laptop-house"></i>
                         </div>
                         <h3>Flexible Learning</h3>
-                        <p>Online and offline classes available with recorded sessions.</p>
+                        <p>Online and offline classes available with recorded sessions for convenient learning.</p>
                     </div>
                     
                     <div class="feature-card">
@@ -185,7 +305,7 @@
                             <i class="fas fa-project-diagram"></i>
                         </div>
                         <h3>Project-Based</h3>
-                        <p>Build real-world projects to strengthen your portfolio.</p>
+                        <p>Build real-world projects to strengthen your portfolio and practical skills.</p>
                     </div>
                     
                     <div class="feature-card">
@@ -194,6 +314,137 @@
                         </div>
                         <h3>Certification</h3>
                         <p>Get industry-recognized certificates upon course completion.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Personal Attention</h3>
+                        <p>Small batch sizes ensure individual attention to every student.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Career Support</h3>
+                        <p>Resume building, interview preparation, and career guidance included.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our <span class="highlight">Students Say</span></h2>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Umesh sir's teaching method made complex programming concepts easy to understand. The practical projects helped me build confidence and land my first job."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div class="author-info">
+                                <h4>Rahul Verma</h4>
+                                <p>Software Developer</p>
+                                <p class="course">Completed Java Programming</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"The Python course was comprehensive and practical. Sir's experience in teaching really shows in how he explains concepts with real-world examples."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Python Developer</p>
+                                <p class="course">Completed Python Programming</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"As a complete beginner, I was nervous about coding. But Umesh sir's patient teaching and practical approach helped me build my first web application."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Amit Patel</h4>
+                                <p>Web Developer</p>
+                                <p class="course">Completed Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Batch Information -->
+        <section class="batch-info">
+            <div class="container">
+                <div class="batch-content">
+                    <div class="batch-text">
+                        <h2>Next Batch Starting Soon!</h2>
+                        <p>Limited seats available for the upcoming batch. Enroll now to secure your spot.</p>
+                        
+                        <div class="batch-details">
+                            <div class="detail-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <div>
+                                    <h4>Start Date</h4>
+                                    <p>15th of Every Month</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <h4>Batch Timings</h4>
+                                    <p>Morning: 9 AM - 12 PM</p>
+                                    <p>Evening: 6 PM - 9 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <i class="fas fa-laptop"></i>
+                                <div>
+                                    <h4>Mode</h4>
+                                    <p>Online & Offline Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="batch-cta">
+                        <h3>Limited Seats Available</h3>
+                        <p>Book your seat before it's too late</p>
+                        <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now</a>
+                        <p class="cta-note">Free demo class available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Have Questions About Our Courses?</h2>
+                    <p>Contact us for more information or schedule a free counseling session</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Call Now: +91 7509873448
+                        </a>
+                        <a href="contact.html#contactForm" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Send Message
+                        </a>
                     </div>
                 </div>
             </div>
@@ -209,7 +460,7 @@
                         <i class="fas fa-code"></i>
                         <span>CodeMaster</span>
                     </a>
-                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <p>Master programming languages with practical, hands-on training from experienced instructor Umesh Kumar.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -230,22 +481,23 @@
                 </div>
                 
                 <div class="footer-courses">
-                    <h3>Courses</h3>
+                    <h3>Popular Courses</h3>
                     <ul>
-                        <li><a href="#">C Programming</a></li>
-                        <li><a href="#">C++ Programming</a></li>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">Web Development</a></li>
+                        <li><a href="course-c.html">C Programming</a></li>
+                        <li><a href="course-cpp.html">C++ Programming</a></li>
+                        <li><a href="course-java.html">Java Programming</a></li>
+                        <li><a href="course-python.html">Python Programming</a></li>
+                        <li><a href="course-web.html">Web Development</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
-                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
-                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Janjgir-Champa, Chhattisgarh</li>
+                        <li><i class="fas fa-phone"></i> +91 7509873448</li>
+                        <li><i class="fas fa-envelope"></i> ukbanjare1989@gmail.com</li>
+                        <li><i class="fas fa-globe"></i> umeshsir05.github.io/umesh-sir</li>
                     </ul>
                 </div>
             </div>
@@ -258,5 +510,31 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+            
+            // Simple testimonial slider
+            const testimonials = document.querySelectorAll('.testimonial-item');
+            let currentTestimonial = 0;
+            
+            function showTestimonial(index) {
+                testimonials.forEach((testimonial, i) => {
+                    testimonial.style.display = i === index ? 'block' : 'none';
+                });
+            }
+            
+            // Initialize
+            showTestimonial(currentTestimonial);
+            
+            // Auto rotate testimonials
+            setInterval(() => {
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                showTestimonial(currentTestimonial);
+            }, 5000);
+        });
+    </script>
 </body>
 </html>
