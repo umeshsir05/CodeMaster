@@ -7,8 +7,437 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Additional Mobile Responsive Styles for Course Page */
+        .mobile-course-header {
+            display: none;
+        }
+        
+        .mobile-course-price {
+            display: none;
+        }
+        
+        .mobile-enroll-btn {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            /* Mobile Hero Section */
+            .course-hero-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .course-header {
+                order: 1;
+            }
+            
+            .course-hero-image {
+                order: 2;
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .course-title {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+            
+            .course-subtitle {
+                font-size: 1rem;
+            }
+            
+            .course-meta-info {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-sm);
+            }
+            
+            .meta-item {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--spacing-xs);
+                padding: var(--spacing-sm);
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+            }
+            
+            .meta-item i {
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .meta-label {
+                font-size: 0.8rem;
+            }
+            
+            .meta-value {
+                font-size: 1rem;
+            }
+            
+            .course-cta {
+                flex-direction: column;
+                gap: var(--spacing-md);
+                text-align: center;
+            }
+            
+            .course-price {
+                flex-direction: column;
+                gap: var(--spacing-xs);
+            }
+            
+            .original-price {
+                font-size: 1rem;
+            }
+            
+            .current-price {
+                font-size: 1.8rem;
+            }
+            
+            .discount {
+                font-size: 0.8rem;
+                padding: 0.2rem 0.6rem;
+            }
+            
+            .cta-buttons {
+                width: 100%;
+                flex-direction: column;
+            }
+            
+            .cta-buttons .btn {
+                width: 100%;
+            }
+            
+            /* Mobile Course Overview */
+            .overview-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+            
+            .overview-content h2 {
+                font-size: 1.8rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .feature-item {
+                align-items: flex-start;
+            }
+            
+            .feature-item i {
+                margin-top: 0.3rem;
+            }
+            
+            /* Mobile Syllabus */
+            .syllabus-module {
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .module-header {
+                padding: var(--spacing-md);
+                flex-wrap: wrap;
+            }
+            
+            .module-number {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+                margin-right: var(--spacing-sm);
+            }
+            
+            .module-header h3 {
+                font-size: 1rem;
+                flex: 1 0 100%;
+                order: 2;
+                margin-top: var(--spacing-sm);
+                text-align: left;
+            }
+            
+            .module-duration {
+                order: 3;
+                margin-top: var(--spacing-xs);
+                margin-right: 0;
+                font-size: 0.8rem;
+            }
+            
+            .module-header i {
+                order: 1;
+                margin-left: auto;
+            }
+            
+            .module-content {
+                padding: 0 var(--spacing-md);
+            }
+            
+            .module-content ul {
+                padding-left: var(--spacing-md);
+                padding-bottom: var(--spacing-md);
+            }
+            
+            .module-content li {
+                font-size: 0.9rem;
+                margin-bottom: var(--spacing-xs);
+            }
+            
+            /* Mobile Projects */
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .project-card {
+                padding: var(--spacing-md);
+            }
+            
+            .project-image {
+                font-size: 2.5rem;
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .project-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            /* Mobile Audience */
+            .audience-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .audience-card {
+                padding: var(--spacing-md);
+                text-align: center;
+            }
+            
+            .audience-icon {
+                font-size: 2rem;
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            /* Mobile Career */
+            .career-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .career-card {
+                padding: var(--spacing-md);
+            }
+            
+            .career-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            /* Mobile FAQ */
+            .faq-list {
+                margin-top: var(--spacing-md);
+            }
+            
+            .faq-question {
+                padding: var(--spacing-md);
+                font-size: 0.95rem;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            
+            .faq-question i {
+                margin-left: var(--spacing-sm);
+                flex-shrink: 0;
+            }
+            
+            .faq-answer {
+                padding: 0 var(--spacing-md);
+            }
+            
+            .faq-answer p {
+                padding: var(--spacing-md) 0;
+                font-size: 0.9rem;
+            }
+            
+            /* Mobile CTA */
+            .course-cta-section .cta-content h2 {
+                font-size: 1.5rem;
+            }
+            
+            .course-cta-section .cta-content p {
+                font-size: 0.95rem;
+            }
+            
+            .course-cta-section .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .course-cta-section .btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            /* Mobile Header Fix */
+            .mobile-course-header {
+                display: block;
+                background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+                color: white;
+                padding: var(--spacing-md);
+                margin-top: 60px;
+                text-align: center;
+            }
+            
+            .mobile-course-header .course-badge {
+                display: inline-block;
+                padding: 0.4rem 0.8rem;
+                background-color: rgba(255, 255, 255, 0.2);
+                color: white;
+                border-radius: 50px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin-bottom: var(--spacing-xs);
+            }
+            
+            .mobile-course-header h1 {
+                font-size: 1.5rem;
+                margin-bottom: var(--spacing-xs);
+            }
+            
+            .mobile-course-price {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-sm);
+                margin: var(--spacing-sm) 0;
+            }
+            
+            .mobile-original-price {
+                text-decoration: line-through;
+                opacity: 0.7;
+                font-size: 1rem;
+            }
+            
+            .mobile-current-price {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            
+            .mobile-discount {
+                background-color: #ff6584;
+                color: white;
+                padding: 0.2rem 0.6rem;
+                border-radius: 50px;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+            
+            .mobile-enroll-btn {
+                display: block;
+                width: 100%;
+                padding: var(--spacing-md);
+                background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+                color: white;
+                text-align: center;
+                font-weight: 600;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            /* Hide desktop elements on mobile */
+            .course-hero .course-badge,
+            .course-hero .course-cta {
+                display: none;
+            }
+            
+            /* Adjust spacing for fixed mobile button */
+            main {
+                padding-bottom: 70px;
+            }
+            
+            /* Improve touch targets */
+            .btn, .module-header, .faq-question {
+                min-height: 44px;
+            }
+            
+            .course-link {
+                min-height: 40px;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .course-title {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            
+            .mobile-course-header h1 {
+                font-size: 1.3rem;
+            }
+            
+            .course-icon-large {
+                display: none;
+            }
+            
+            /* Better spacing for very small screens */
+            .course-hero,
+            .course-overview-section,
+            .course-syllabus-section,
+            .course-projects-section,
+            .audience-section,
+            .career-section,
+            .course-faq-section,
+            .course-cta-section {
+                padding: var(--spacing-lg) 0;
+            }
+            
+            .container {
+                padding: 0 var(--spacing-sm);
+            }
+            
+            /* Improve list readability */
+            .module-content li,
+            .story-points li {
+                line-height: 1.5;
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .course-card:hover,
+            .project-card:hover,
+            .audience-card:hover,
+            .career-card:hover {
+                transform: none;
+            }
+            
+            .btn:hover,
+            .course-link:hover,
+            .module-header:hover,
+            .faq-question:hover {
+                transform: scale(0.98);
+            }
+            
+            /* Increase tap target size */
+            .course-link,
+            .instructor-link,
+            .path-link {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body class="dark-mode">
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
             <div class="nav-container">
@@ -54,6 +483,17 @@
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Course Header (Hidden on Desktop) -->
+    <div class="mobile-course-header">
+        <div class="course-badge beginner">Beginner Friendly</div>
+        <h1 class="course-title">C Programming <span class="highlight">Course</span></h1>
+        <div class="mobile-course-price">
+            <span class="mobile-original-price">₹12,999</span>
+            <span class="mobile-current-price">₹9,999</span>
+            <span class="mobile-discount">23% OFF</span>
+        </div>
+    </div>
 
     <main>
         <section class="hero course-hero">
@@ -194,9 +634,9 @@
                         <div class="sidebar-card">
                             <h3>Instructor</h3>
                             <div class="instructor-info">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Rajesh Kumar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Umesh Kumar">
                                 <div>
-                                    <h4>Rajesh Kumar</h4>
+                                    <h4>Umesh Kumar</h4>
                                     <p>Founder & Senior Instructor</p>
                                     <p>15+ years experience</p>
                                 </div>
@@ -490,6 +930,9 @@
         </section>
     </main>
 
+    <!-- Mobile Fixed Enroll Button -->
+    <a href="contact.html#contactForm" class="mobile-enroll-btn">Enroll Now - ₹9,999</a>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -532,9 +975,9 @@
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
-                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
-                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Janjgir-Champa, Chhattisgarh</li>
+                        <li><i class="fas fa-phone"></i> +91 7509873448</li>
+                        <li><i class="fas fa-envelope"></i> ukbanjare1989@gmail.com</li>
                     </ul>
                 </div>
             </div>
@@ -551,19 +994,23 @@
             const moduleHeaders = document.querySelectorAll('.module-header');
             const faqQuestions = document.querySelectorAll('.faq-question');
             
+            // Module accordion
             moduleHeaders.forEach(header => {
                 header.addEventListener('click', () => {
                     const content = header.nextElementSibling;
                     const icon = header.querySelector('i');
                     
-                    moduleHeaders.forEach(otherHeader => {
-                        if (otherHeader !== header) {
-                            const otherContent = otherHeader.nextElementSibling;
-                            const otherIcon = otherHeader.querySelector('i');
-                            otherContent.style.maxHeight = null;
-                            otherIcon.style.transform = 'rotate(0deg)';
-                        }
-                    });
+                    // Close other modules on mobile
+                    if (window.innerWidth <= 768) {
+                        moduleHeaders.forEach(otherHeader => {
+                            if (otherHeader !== header) {
+                                const otherContent = otherHeader.nextElementSibling;
+                                const otherIcon = otherHeader.querySelector('i');
+                                otherContent.style.maxHeight = null;
+                                otherIcon.style.transform = 'rotate(0deg)';
+                            }
+                        });
+                    }
                     
                     if (content.style.maxHeight) {
                         content.style.maxHeight = null;
@@ -575,19 +1022,23 @@
                 });
             });
             
+            // FAQ accordion
             faqQuestions.forEach(question => {
                 question.addEventListener('click', () => {
                     const answer = question.nextElementSibling;
                     const icon = question.querySelector('i');
                     
-                    faqQuestions.forEach(otherQuestion => {
-                        if (otherQuestion !== question) {
-                            const otherAnswer = otherQuestion.nextElementSibling;
-                            const otherIcon = otherQuestion.querySelector('i');
-                            otherAnswer.style.maxHeight = null;
-                            otherIcon.style.transform = 'rotate(0deg)';
-                        }
-                    });
+                    // Close other FAQs on mobile
+                    if (window.innerWidth <= 768) {
+                        faqQuestions.forEach(otherQuestion => {
+                            if (otherQuestion !== question) {
+                                const otherAnswer = otherQuestion.nextElementSibling;
+                                const otherIcon = otherQuestion.querySelector('i');
+                                otherAnswer.style.maxHeight = null;
+                                otherIcon.style.transform = 'rotate(0deg)';
+                            }
+                        });
+                    }
                     
                     if (answer.style.maxHeight) {
                         answer.style.maxHeight = null;
@@ -599,8 +1050,58 @@
                 });
             });
             
+            // Set current year
             const currentYear = new Date().getFullYear();
             document.getElementById('currentYear').textContent = currentYear;
+            
+            // Mobile navigation scroll behavior
+            const syllabusLink = document.querySelector('a[href="#syllabus"]');
+            if (syllabusLink) {
+                syllabusLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const syllabusSection = document.getElementById('syllabus');
+                    if (syllabusSection) {
+                        // Adjust for mobile header
+                        const offset = window.innerWidth <= 768 ? 120 : 80;
+                        const targetPosition = syllabusSection.offsetTop - offset;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+            
+            // Touch-friendly improvements
+            document.addEventListener('touchstart', function() {}, {passive: true});
+            
+            // Prevent zoom on double tap
+            let lastTouchEnd = 0;
+            document.addEventListener('touchend', function(event) {
+                const now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+            
+            // Improve scrolling performance on mobile
+            if ('scrollBehavior' in document.documentElement.style) {
+                // Browser supports smooth scrolling
+            } else {
+                // Add smooth scroll polyfill if needed
+            }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            // Recalculate accordion heights on resize
+            document.querySelectorAll('.module-content, .faq-answer').forEach(element => {
+                if (element.style.maxHeight && element.style.maxHeight !== '0px') {
+                    element.style.maxHeight = element.scrollHeight + 'px';
+                }
+            });
         });
     </script>
 </body>
