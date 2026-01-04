@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CodeMaster Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+  <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
+                                <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
+                                <a href="course-java.html"><i class="fab fa-java"></i> Java</a>
+                                <a href="course-python.html"><i class="fab fa-python"></i> Python</a>
+                                <a href="course-web.html"><i class="fab fa-html5"></i> HTML/CSS</a>
+                                <a href="course-js.html"><i class="fab fa-js-square"></i> JavaScript</a>
+                                <a href="course-php.html"><i class="fab fa-php"></i> PHP & MySQL</a>
+                            </div>
+                        </li>
+                        <li><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="contact.html#contactForm" class="btn enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="hero contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Get in <span class="highlight">Touch</span></h1>
+                    <p class="hero-subtitle">Have questions about our courses? Want to discuss your learning path? We're here to help!</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Contact us">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Info Section -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Our Campus</h3>
+                        <p>123 Tech Street, Code City</p>
+                        <p>Near Innovation Park, 400001</p>
+                        <a href="#" class="contact-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+1 234 567 8900</p>
+                        <p>+1 234 567 8901</p>
+                        <p>Mon-Sat: 9:00 AM - 7:00 PM</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@codemaster.com</p>
+                        <p>admissions@codemaster.com</p>
+                        <p>support@codemaster.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9AM - 7PM</p>
+                        <p>Saturday: 9AM - 5PM</p>
+                        <p>Sunday: 10AM - 2PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form & Map Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-container">
+                    <div class="form-section">
+                        <h2 class="section-title">Send Us a <span class="highlight">Message</span></h2>
+                        <p class="section-subtitle">Fill out the form below and our team will get back to you within 24 hours.</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <div class="error-message" id="nameError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                    <div class="error-message" id="phoneError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="course">Course Interested In</label>
+                                    <select id="course" name="course">
+
+                                        <option value="">Select a course</option>
+                                        <option value="c">C Programming</option>
+                                        <option value="cpp">C++ Programming</option>
+                                        <option value="java">Java</option>
+                                        <option value="python">Python</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="js">JavaScript</option>
+                                        <option value="php">PHP & MySQL</option>
+                                        <option value="fullstack">Full Stack Development</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <div class="error-message" id="subjectError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for updates on new courses and offers</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                            <div id="formSuccess" class="success-message"></div>
+                        </form>
+                    </div>
+                    
+                    <div class="map-section">
+                        <h2 class="section-title">Find Us <span class="highlight">Here</span></h2>
+                        <div class="map-container">
+                            <!-- Embedded Google Map -->
+                            <div class="map-placeholder">
+                                <div class="map-overlay">
+                                    <h3>CodeMaster Institute</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</p>
+                                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                                    <p><i class="fas fa-clock"></i> Mon-Sat: 9AM-7PM</p>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Map location">
+                            </div>
+                        </div>
+                        
+                        <div class="faq-section">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    What are the batch timings?
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We offer multiple batches throughout the day: Morning (9 AM - 12 PM), Afternoon (2 PM - 5 PM), and Evening (6 PM - 9 PM). Weekend batches are also available.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Do you offer online classes?
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes, we offer both online and offline classes. You can choose the mode that suits you best. Our online classes include live sessions, recorded lectures, and interactive doubt-solving.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    What is the course fee structure?
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Course fees vary depending on the program and duration. We offer flexible payment options and scholarships for meritorious students. Contact our admissions office for detailed fee structure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Campus Tour Section -->
+        <section class="campus-section">
+            <div class="container">
+                <h2 class="section-title">Take a Virtual <span class="highlight">Campus Tour</span></h2>
+                
+                <div class="campus-grid">
+                    <div class="campus-card">
+                        <div class="campus-image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Classroom">
+                        </div>
+                        <h3>Modern Classrooms</h3>
+                        <p>Air-conditioned classrooms with smart boards and high-speed internet.</p>
+                    </div>
+                    
+                    <div class="campus-card">
+                        <div class="campus-image">
+                            <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Computer Lab">
+                        </div>
+                        <h3>Computer Labs</h3>
+                        <p>Fully equipped labs with latest hardware and software for hands-on practice.</p>
+                    </div>
+                    
+                    <div class="campus-card">
+                        <div class="campus-image">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Library">
+                        </div>
+                        <h3>Library & Resources</h3>
+                        <p>Extensive collection of programming books, e-resources, and study materials.</p>
+                    </div>
+                    
+                    <div class="campus-card">
+                        <div class="campus-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cafeteria">
+                        </div>
+                        <h3>Cafeteria & Lounge</h3>
+                        <p>Spacious cafeteria and student lounge for breaks and group discussions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Still Have Questions?</h2>
+                    <p>Call us directly at <strong>+1 234 567 8900</strong> or visit our campus during office hours.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+12345678900" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-calendar-alt"></i> Schedule a Visit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeMaster</span>
+                    </a>
+                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-courses">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">C Programming</a></li>
+                        <li><a href="#">C++ Programming</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CodeMaster Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Contact page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form validation
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Reset previous errors
+                    const errorMessages = document.querySelectorAll('.error-message');
+                    errorMessages.forEach(error => error.textContent = '');
+                    
+                    // Get form values
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const subject = document.getElementById('subject').value.trim();
+                    const message = document.getElementById('message').value.trim();
+                    
+                    let isValid = true;
+                    
+                    // Validate name
+                    if (name.length < 2) {
+                        document.getElementById('nameError').textContent = 'Name must be at least 2 characters';
+                        isValid = false;
+                    }
+                    
+                    // Validate email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        document.getElementById('emailError').textContent = 'Please enter a valid email address';
+                        isValid = false;
+                    }
+                    
+                    // Validate phone (if provided)
+                    if (phone && !/^[\d\s\-\+\(\)]{10,}$/.test(phone)) {
+                        document.getElementById('phoneError').textContent = 'Please enter a valid phone number';
+                        isValid = false;
+                    }
+                    
+                    // Validate subject
+                    if (subject.length < 5) {
+                        document.getElementById('subjectError').textContent = 'Subject must be at least 5 characters';
+                        isValid = false;
+                    }
+                    
+                    // Validate message
+                    if (message.length < 10) {
+                        document.getElementById('messageError').textContent = 'Message must be at least 10 characters';
+                        isValid = false;
+                    }
+                    
+                    if (isValid) {
+                        // Simulate form submission
+                        formSuccess.textContent = 'Thank you! Your message has been sent. We will get back to you within 24 hours.';
+                        formSuccess.style.display = 'block';
+                        
+                        // Reset form
+                        contactForm.reset();
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            formSuccess.style.display = 'none';
+                        }, 5000);
+                    }
+                });
+            }
+            
+            // FAQ accordion functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    // Close all other FAQs
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    // Toggle current FAQ
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

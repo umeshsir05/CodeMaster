@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Programming Course | CodeMaster Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
+                                <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
+                                <a href="course-java.html"><i class="fab fa-java"></i> Java</a>
+                                <a href="course-python.html"><i class="fab fa-python"></i> Python</a>
+                                <a href="course-web.html"><i class="fab fa-html5"></i> HTML/CSS</a>
+                                <a href="course-js.html"><i class="fab fa-js-square"></i> JavaScript</a>
+                                <a href="course-php.html"><i class="fab fa-php"></i> PHP & MySQL</a>
+                            </div>
+                        </li>
+                        <li><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="contact.html#contactForm" class="btn enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero course-hero">
+            <div class="container">
+                <div class="course-hero-content">
+                    <div class="course-header">
+                        <div class="course-badge intermediate">Intermediate Level</div>
+                        <h1 class="course-title">Java Programming <span class="highlight">Course</span></h1>
+                        <p class="course-subtitle">Build enterprise applications with Java. Learn core Java, Spring Framework, Hibernate, and build REST APIs for backend development.</p>
+                        
+                        <div class="course-meta-info">
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <span class="meta-label">Duration</span>
+                                    <span class="meta-value">12 Weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <div>
+                                    <span class="meta-label">Level</span>
+                                    <span class="meta-value">Intermediate</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <span class="meta-label">Mode</span>
+                                    <span class="meta-value">Online & Offline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <div>
+                                    <span class="meta-label">Projects</span>
+                                    <span class="meta-value">8+ Hands-on Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="course-cta">
+                            <div class="course-price">
+                                <span class="original-price">₹16,999</span>
+                                <span class="current-price">₹13,999</span>
+                                <span class="discount">18% OFF</span>
+                            </div>
+                            <div class="cta-buttons">
+                                <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now</a>
+                                <a href="#syllabus" class="btn btn-outline">View Syllabus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-hero-image">
+                        <div class="course-icon-large">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Java Programming">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-overview-section">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>Course <span class="highlight">Overview</span></h2>
+                        <p>Java is one of the most popular and versatile programming languages, used by millions of developers worldwide for building enterprise applications, Android apps, web applications, and more. This comprehensive course covers everything from Java basics to advanced frameworks.</p>
+                        <p>You'll learn object-oriented programming, data structures, database connectivity, and modern Java frameworks like Spring Boot and Hibernate. The course includes real-world projects that simulate industry scenarios.</p>
+                        
+                        <div class="key-features">
+                            <h3>What You'll Learn</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Core Java and OOP concepts</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Spring Framework and Spring Boot</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Hibernate ORM and database integration</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>RESTful API development</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Multithreading and collections</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Build tools (Maven, Gradle)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Course Details</h3>
+                            <div class="details-list">
+                                <div class="detail-item">
+                                    <span class="detail-label">Start Date:</span>
+                                    <span class="detail-value">15th of Every Month</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Batch Timings:</span>
+                                    <span class="detail-value">Morning, Afternoon, Evening</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Total Hours:</span>
+                                    <span class="detail-value">144 Hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Mode:</span>
+                                    <span class="detail-value">Online & Classroom</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Certificate:</span>
+                                    <span class="detail-value">Yes (Industry Recognized)</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Placement Assistance:</span>
+                                    <span class="detail-value">Yes</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Instructor</h3>
+                            <div class="instructor-info">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Priya Sharma">
+                                <div>
+                                    <h4>Priya Sharma</h4>
+                                    <p>Lead Instructor</p>
+                                    <p>10+ years experience</p>
+                                </div>
+                            </div>
+                            <a href="faculty.html" class="instructor-link">View Profile <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-syllabus-section" id="syllabus">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">Syllabus</span></h2>
+                
+                <div class="syllabus-accordion">
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">01</span>
+                            <h3>Core Java Fundamentals</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Introduction to Java and JVM</li>
+                                <li>Data Types, Variables, and Operators</li>
+                                <li>Control Statements and Loops</li>
+                                <li>Arrays and Strings</li>
+                                <li>Object-Oriented Programming Concepts</li>
+                                <li>Classes, Objects, and Methods</li>
+                                <li>Inheritance, Polymorphism, Abstraction</li>
+                                <li><strong>Project:</strong> Student Management System</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">02</span>
+                            <h3>Advanced Java Concepts</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Exception Handling</li>
+                                <li>Multithreading and Concurrency</li>
+                                <li>Collections Framework (List, Set, Map)</li>
+                                <li>File Handling and I/O Streams</li>
+                                <li>Generics and Annotations</li>
+                                <li>Lambda Expressions and Stream API</li>
+                                <li>Java 8+ New Features</li>
+                                <li><strong>Project:</strong> Multithreaded Chat Application</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">03</span>
+                            <h3>Database Connectivity & Web Basics</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>JDBC (Java Database Connectivity)</li>
+                                <li>SQL and Database Design</li>
+                                <li>Servlet Programming</li>
+                                <li>JSP (Java Server Pages)</li>
+                                <li>MVC Architecture</li>
+                                <li>Web Application Deployment</li>
+                                <li>Introduction to JPA</li>
+                                <li><strong>Project:</strong> E-commerce Web Application</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">04</span>
+                            <h3>Spring Framework & Advanced Projects</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Spring Framework Fundamentals</li>
+                                <li>Spring Boot for Rapid Development</li>
+                                <li>Spring MVC and RESTful Services</li>
+                                <li>Hibernate ORM Framework</li>
+                                <li>Spring Security for Authentication</li>
+                                <li>Microservices with Spring Cloud</li>
+                                <li>Build Tools: Maven and Gradle</li>
+                                <li><strong>Project:</strong> RESTful API for Social Media</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-projects-section">
+            <div class="container">
+                <h2 class="section-title">Hands-on <span class="highlight">Projects</span></h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Student Management System</h3>
+                        <p>Console-based application to manage student records, grades, and attendance using OOP concepts.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Multithreaded Chat Application</h3>
+                        <p>Real-time chat application with multiple clients and server using socket programming and threads.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Web Application</h3>
+                        <p>Full-featured online store with product catalog, shopping cart, and checkout using Servlets and JSP.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>RESTful API for Social Media</h3>
+                        <p>Build a complete REST API for a social media platform using Spring Boot and Hibernate.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Banking System with Security</h3>
+                        <p>Secure banking application with user authentication, transactions, and reporting using Spring Security.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Task Management Application</h3>
+                        <p>Collaborative task management tool with real-time updates using WebSocket and Spring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="audience-section">
+            <div class="container">
+                <h2 class="section-title">Who Should <span class="highlight">Enroll?</span></h2>
+                
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Aspiring Java Developers</h3>
+                        <p>Beginners wanting to start a career in Java development for enterprise applications.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Android Developers</h3>
+                        <p>Those interested in Android app development who need strong Java fundamentals.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Developers</h3>
+                        <p>Developers wanting to build scalable backend systems and REST APIs using Java.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>IT Professionals</h3>
+                        <p>Working professionals looking to upskill in Java for better career opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="career-section">
+            <div class="container">
+                <h2 class="section-title">Career <span class="highlight">Opportunities</span></h2>
+                
+                <div class="career-grid">
+                    <div class="career-card">
+                        <h3>Java Developer</h3>
+                        <p>Average Salary: ₹5-20 LPA</p>
+                        <p>Develop enterprise applications, web services, and backend systems using Java.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Spring Boot Developer</h3>
+                        <p>Average Salary: ₹6-25 LPA</p>
+                        <p>Specialize in Spring Framework for building microservices and REST APIs.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Full Stack Java Developer</h3>
+                        <p>Average Salary: ₹8-30 LPA</p>
+                        <p>Work on both frontend and backend development with Java-based technologies.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Android Developer</h3>
+                        <p>Average Salary: ₹4-18 LPA</p>
+                        <p>Build Android applications using Java or Kotlin for mobile platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-faq-section">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">FAQs</span></h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Is Java still relevant with new languages emerging?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! Java remains one of the most popular programming languages worldwide. It's used by 90% of Fortune 500 companies for building enterprise applications. Java's stability, performance, and vast ecosystem keep it highly relevant for backend development, Android apps, and large-scale systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What is the difference between Java and JavaScript?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Java and JavaScript are completely different languages despite their similar names. Java is a compiled, statically-typed language used for backend development, Android apps, and enterprise software. JavaScript is an interpreted, dynamically-typed language used primarily for frontend web development. The only similarity is the word "Java" in their names.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do I need to learn Java for Android development?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While Kotlin is now the preferred language for Android development, Java is still widely used and understanding Java makes learning Kotlin much easier. Many existing Android apps are written in Java, and knowing Java opens more opportunities. This course provides excellent foundation for both traditional Java development and Android development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What software do I need for Java programming?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You'll need JDK (Java Development Kit) and an IDE. We recommend IntelliJ IDEA (Community Edition is free) or Eclipse. For database work, MySQL or PostgreSQL. We provide complete installation and setup guidance in the first week of the course.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Become an Enterprise Java Developer!</h2>
+                    <p>Limited seats available for the next batch. Enroll now to secure your spot at the discounted price.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now at ₹13,999</a>
+                        <a href="contact.html" class="btn btn-outline">Schedule a Demo Class</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeMaster</span>
+                    </a>
+                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-courses">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="course-java.html">Java Programming</a></li>
+                        <li><a href="course-python.html">Python Programming</a></li>
+                        <li><a href="course-web.html">Web Development</a></li>
+                        <li><a href="course-fullstack.html">Full Stack Development</a></li>
+                        <li><a href="course-datascience.html">Data Science</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CodeMaster Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const moduleHeaders = document.querySelectorAll('.module-header');
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            moduleHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('i');
+                    
+                    moduleHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header) {
+                            const otherContent = otherHeader.nextElementSibling;
+                            const otherIcon = otherHeader.querySelector('i');
+                            otherContent.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        });
+    </script>
+</body>
+</html>

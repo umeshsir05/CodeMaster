@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | CodeMaster Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+     <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
+                                <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
+                                <a href="course-java.html"><i class="fab fa-java"></i> Java</a>
+                                <a href="course-python.html"><i class="fab fa-python"></i> Python</a>
+                                <a href="course-web.html"><i class="fab fa-html5"></i> HTML/CSS</a>
+                                <a href="course-js.html"><i class="fab fa-js-square"></i> JavaScript</a>
+                                <a href="course-php.html"><i class="fab fa-php"></i> PHP & MySQL</a>
+                            </div>
+                        </li>
+                        <li><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="contact.html#contactForm" class="btn enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Hero Section -->
+        <section class="hero about-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">About <span class="highlight">CodeMaster Institute</span></h1>
+                    <p class="hero-subtitle">Empowering students with industry-relevant programming skills since 2015</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Students learning programming">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mission & Vision -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h2>Our Mission</h2>
+                        <p>To make quality programming education accessible to everyone, regardless of their background. We aim to bridge the gap between academic learning and industry requirements by providing practical, hands-on training.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h2>Our Vision</h2>
+                        <p>To become the most trusted programming institute, recognized for producing skilled developers who drive innovation and technological advancement in the industry.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h2>Our Values</h2>
+                        <p>Excellence, Integrity, Innovation, and Student Success. We believe in continuous learning and adapting to the ever-evolving technology landscape.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Story -->
+        <section class="story-section">
+            <div class="container">
+                <h2 class="section-title">Our <span class="highlight">Story</span></h2>
+                
+                <div class="story-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h3>Humble Beginnings</h3>
+                            <p>CodeMaster Institute started as a small coaching center with just 3 courses: C, C++, and Java. Our founder, Mr. Rajesh Kumar, identified the gap between academic curriculum and industry requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-content">
+                            <h3>Expansion</h3>
+                            <p>We expanded our course offerings to include Python and Web Development (HTML, CSS, JavaScript). Our student base grew to 500+ learners, and we moved to a larger facility.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-content">
+                            <h3>Online Platform Launch</h3>
+                            <p>Launched our online learning platform to reach students across the country. Introduced PHP & MySQL course and started offering hybrid learning options.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <h3>Industry Partnerships</h3>
+                            <p>Established partnerships with tech companies for internships and placement opportunities. Crossed the milestone of 10,000+ students trained.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h3>Present Day</h3>
+                            <p>Offering 15+ comprehensive programming courses with 50+ expert instructors. Continuously updating curriculum to include latest technologies and industry trends.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <h2 class="section-title">By The <span class="highlight">Numbers</span></h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="10000">0</div>
+                        <div class="stat-text">Students Trained</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-text">Courses Offered</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-text">Expert Instructors</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="85">0</div>
+                        <div class="stat-text">Placement Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Teaching Methodology -->
+        <section class="methodology-section">
+            <div class="container">
+                <h2 class="section-title">Our <span class="highlight">Teaching Methodology</span></h2>
+                
+                <div class="methodology-grid">
+                    <div class="methodology-card">
+                        <div class="methodology-step">01</div>
+                        <h3>Concept Building</h3>
+                        <p>Strong foundation of theoretical concepts with real-world examples and analogies.</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <div class="methodology-step">02</div>
+                        <h3>Hands-on Practice</h3>
+                        <p>Practical coding sessions with live examples and interactive coding exercises.</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <div class="methodology-step">03</div>
+                        <h3>Project Development</h3>
+                        <p>Building real-world projects to apply learned concepts and build portfolio.</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <div class="methodology-step">04</div>
+                        <h3>Code Review & Feedback</h3>
+                        <p>Personalized feedback on code quality, efficiency, and best practices.</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <div class="methodology-step">05</div>
+                        <h3>Mock Interviews</h3>
+                        <p>Preparation for technical interviews with mock sessions and problem-solving practice.</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <div class="methodology-step">06</div>
+                        <h3>Career Guidance</h3>
+                        <p>Resume building, portfolio development, and career path counseling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Faculty Preview -->
+        <section class="faculty-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our <span class="highlight">Expert Faculty</span></h2>
+                
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Rajesh Kumar">
+                        </div>
+                        <h3>Rajesh Kumar</h3>
+                        <p class="faculty-title">Founder & Senior Instructor</p>
+                        <p class="faculty-expertise">C, C++, Data Structures</p>
+                        <p class="faculty-experience">15+ years experience</p>
+                    </div>
+                    
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Priya Sharma">
+                        </div>
+                        <h3>Priya Sharma</h3>
+                        <p class="faculty-title">Lead Instructor</p>
+                        <p class="faculty-expertise">Java, Python, Web Development</p>
+                        <p class="faculty-experience">10+ years experience</p>
+                    </div>
+                    
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Amit Patel">
+                        </div>
+                        <h3>Amit Patel</h3>
+                        <p class="faculty-title">Senior Instructor</p>
+                        <p class="faculty-expertise">JavaScript, PHP, MySQL</p>
+                        <p class="faculty-experience">12+ years experience</p>
+                    </div>
+                </div>
+                
+                <div class="center-button">
+                    <a href="#" class="btn btn-primary">View All Faculty</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Programming Journey?</h2>
+                    <p>Join thousands of successful students who have transformed their careers with CodeMaster Institute.</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeMaster</span>
+                    </a>
+                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-courses">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">C Programming</a></li>
+                        <li><a href="#">C++ Programming</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CodeMaster Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // About page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animated counter for stats
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const animateCounter = (element) => {
+                const target = parseInt(element.getAttribute('data-count'));
+                const suffix = element.textContent.includes('%') ? '%' : '+';
+                let count = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    count += increment;
+                    if (count >= target) {
+                        count = target;
+                        clearInterval(timer);
+                    }
+                    element.textContent = Math.floor(count) + (suffix === '%' ? '%' : '+');
+                }, 20);
+            };
+            
+            // Trigger counter animation when element is in viewport
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statNumbers.forEach(stat => {
+                observer.observe(stat);
+            });
+        });
+    </script>
+</body>
+</html>

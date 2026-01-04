@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Course | CodeMaster Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
+                                <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
+                                <a href="course-java.html"><i class="fab fa-java"></i> Java</a>
+                                <a href="course-python.html"><i class="fab fa-python"></i> Python</a>
+                                <a href="course-web.html"><i class="fab fa-html5"></i> HTML/CSS</a>
+                                <a href="course-js.html"><i class="fab fa-js-square"></i> JavaScript</a>
+                                <a href="course-php.html"><i class="fab fa-php"></i> PHP & MySQL</a>
+                            </div>
+                        </li>
+                        <li><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="contact.html#contactForm" class="btn enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Course Hero Section -->
+        <section class="hero course-hero">
+            <div class="container">
+                <div class="course-hero-content">
+                    <div class="course-header">
+                        <div class="course-badge beginner">Beginner Friendly</div>
+                        <h1 class="course-title">Python Programming <span class="highlight">Course</span></h1>
+                        <p class="course-subtitle">Learn Python from basics to advanced concepts including web development, data analysis, and automation.</p>
+                        
+                        <div class="course-meta-info">
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <span class="meta-label">Duration</span>
+                                    <span class="meta-value">10 Weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <div>
+                                    <span class="meta-label">Level</span>
+                                    <span class="meta-value">Beginner to Intermediate</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <span class="meta-label">Mode</span>
+                                    <span class="meta-value">Online & Offline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <div>
+                                    <span class="meta-label">Projects</span>
+                                    <span class="meta-value">6+ Hands-on Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="course-cta">
+                            <div class="course-price">
+                                <span class="original-price">₹15,999</span>
+                                <span class="current-price">₹12,999</span>
+                                <span class="discount">20% OFF</span>
+                            </div>
+                            <div class="cta-buttons">
+                                <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now</a>
+                                <a href="#syllabus" class="btn btn-outline">View Syllabus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-hero-image">
+                        <div class="course-icon-large">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1526379879527-8559ecfcaec9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Python Programming">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Course Overview -->
+        <section class="course-overview-section">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>Course <span class="highlight">Overview</span></h2>
+                        <p>Python is one of the most popular and versatile programming languages today. This comprehensive course is designed to take you from a complete beginner to a proficient Python developer.</p>
+                        <p>You'll learn not just Python syntax, but also how to apply it to real-world problems in web development, data analysis, automation, and more. The course includes hands-on projects that will build your portfolio and confidence.</p>
+                        
+                        <div class="key-features">
+                            <h3>What You'll Learn</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Python fundamentals and advanced concepts</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Web development with Django and Flask</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Data analysis with Pandas and NumPy</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Database integration with SQL and MongoDB</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Automation and scripting</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Building RESTful APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Course Details</h3>
+                            <div class="details-list">
+                                <div class="detail-item">
+                                    <span class="detail-label">Start Date:</span>
+                                    <span class="detail-value">15th of Every Month</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Batch Timings:</span>
+                                    <span class="detail-value">Morning, Afternoon, Evening</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Total Hours:</span>
+                                    <span class="detail-value">120 Hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Mode:</span>
+                                    <span class="detail-value">Online & Classroom</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Certificate:</span>
+                                    <span class="detail-value">Yes (Industry Recognized)</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Placement Assistance:</span>
+                                    <span class="detail-value">Yes</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Instructor</h3>
+                            <div class="instructor-info">
+                                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Sanjay Verma">
+                                <div>
+                                    <h4>Sanjay Verma</h4>
+                                    <p>Data Science Instructor</p>
+                                    <p>8+ years experience</p>
+                                </div>
+                            </div>
+                            <a href="faculty.html" class="instructor-link">View Profile <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Course Syllabus -->
+        <section class="course-syllabus-section" id="syllabus">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">Syllabus</span></h2>
+                
+                <div class="syllabus-accordion">
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">Module 1</span>
+                            <h3>Python Fundamentals</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Introduction to Python and Setup</li>
+                                <li>Variables, Data Types, and Operators</li>
+                                <li>Control Structures (if-else, loops)</li>
+                                <li>Functions and Modules</li>
+                                <li>Strings, Lists, Tuples, Dictionaries</li>
+                                <li>File Handling</li>
+                                <li>Error and Exception Handling</li>
+                                <li><strong>Project:</strong> Building a Calculator App</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">Module 2</span>
+                            <h3>Object-Oriented Programming</h3>
+                            <span class="module-duration">2 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Classes and Objects</li>
+                                <li>Inheritance and Polymorphism</li>
+                                <li>Encapsulation and Abstraction</li>
+                                <li>Magic Methods</li>
+                                <li>Decorators and Generators</li>
+                                <li><strong>Project:</strong> Library Management System</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">Module 3</span>
+                            <h3>Web Development with Python</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Introduction to Web Development</li>
+                                <li>Django Framework Fundamentals</li>
+                                <li>Models, Views, and Templates</li>
+                                <li>Django Admin Panel</li>
+                                <li>Flask Framework Basics</li>
+                                <li>Building RESTful APIs</li>
+                                <li><strong>Project:</strong> Blog Application with Django</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">Module 4</span>
+                            <h3>Data Analysis & Automation</h3>
+                            <span class="module-duration">2 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>NumPy for Numerical Computing</li>
+                                <li>Pandas for Data Analysis</li>
+                                <li>Data Visualization with Matplotlib</li>
+                                <li>Web Scraping with BeautifulSoup</li>
+                                <li>Automation with Python Scripts</li>
+                                <li><strong>Project:</strong> Data Analysis Dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section class="course-projects-section">
+            <div class="container">
+                <h2 class="section-title">Hands-on <span class="highlight">Projects</span></h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Advanced Calculator</h3>
+                        <p>Build a scientific calculator with GUI using Tkinter with advanced mathematical functions.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <h3>Blog Application</h3>
+                        <p>Full-featured blog with user authentication, CRUD operations, and comment system using Django.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Analysis Dashboard</h3>
+                        <p>Analyze and visualize datasets using Pandas and create interactive dashboards with Plotly.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Web Automation Bot</h3>
+                        <p>Create automation scripts for web scraping, form filling, and data extraction using Selenium.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce API</h3>
+                        <p>Build RESTful APIs for an e-commerce platform with user authentication and payment integration.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Task Manager</h3>
+                        <p>CLI-based task manager with database integration, reminder system, and progress tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Who Should Enroll -->
+        <section class="audience-section">
+            <div class="container">
+                <h2 class="section-title">Who Should <span class="highlight">Enroll?</span></h2>
+                
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Students</h3>
+                        <p>Computer science students looking to strengthen their programming skills and build projects for their portfolio.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Working Professionals</h3>
+                        <p>Professionals wanting to transition to Python development or add Python skills to their toolkit.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Aspirants in Data Field</h3>
+                        <p>Those interested in data science, analytics, or automation who need Python as a foundational skill.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Entrepreneurs & Freelancers</h3>
+                        <p>Individuals wanting to build their own applications or offer Python development services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Career Opportunities -->
+        <section class="career-section">
+            <div class="container">
+                <h2 class="section-title">Career <span class="highlight">Opportunities</span></h2>
+                
+                <div class="career-grid">
+                    <div class="career-card">
+                        <h3>Python Developer</h3>
+                        <p>Average Salary: ₹6-15 LPA</p>
+                        <p>Build web applications, APIs, and backend systems using Python frameworks.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Data Analyst</h3>
+                        <p>Average Salary: ₹5-12 LPA</p>
+                        <p>Analyze data, create reports, and derive insights using Python libraries.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Automation Engineer</h3>
+                        <p>Average Salary: ₹5-10 LPA</p>
+                        <p>Create scripts to automate repetitive tasks and processes.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Full Stack Developer</h3>
+                        <p>Average Salary: ₹8-20 LPA</p>
+                        <p>Work on both frontend and backend development using Python-based technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="course-faq-section">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">FAQs</span></h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do I need prior programming experience for this course?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, this course is designed for beginners. We start from the very basics of programming and gradually progress to advanced topics. However, basic computer literacy is expected.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What software/tools do I need for this course?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You'll need a computer with Python installed. We recommend using PyCharm or VS Code as your IDE. All necessary software installation guidance will be provided at the beginning of the course.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Will I get a certificate after completing the course?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, upon successful completion of all assignments, projects, and the final assessment, you'll receive a certificate from CodeMaster Institute that is recognized by industry partners.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What kind of support is available during the course?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You'll have access to instructor support during live sessions, a dedicated doubt-solving forum, peer discussions, and TA support. We also provide recorded sessions for review.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="course-cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Start Your Python Journey Today!</h2>
+                    <p>Limited seats available for the next batch. Enroll now to secure your spot at the discounted price.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now at ₹12,999</a>
+                        <a href="contact.html" class="btn btn-outline">Schedule a Demo Class</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeMaster</span>
+                    </a>
+                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-courses">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="course-python.html">Python Programming</a></li>
+                        <li><a href="course-web.html">Web Development</a></li>
+                        <li><a href="course-java.html">Java Programming</a></li>
+                        <li><a href="course-fullstack.html">Full Stack Development</a></li>
+                        <li><a href="course-datascience.html">Data Science</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CodeMaster Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Course detail page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Syllabus accordion functionality
+            const moduleHeaders = document.querySelectorAll('.module-header');
+            
+            moduleHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('i');
+                    
+                    // Close all other modules
+                    moduleHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header) {
+                            const otherContent = otherHeader.nextElementSibling;
+                            const otherIcon = otherHeader.querySelector('i');
+                            otherContent.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    // Toggle current module
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // FAQ accordion functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    // Close all other FAQs
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    // Toggle current FAQ
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

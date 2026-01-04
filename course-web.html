@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course | CodeMaster Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
+                                <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
+                                <a href="course-java.html"><i class="fab fa-java"></i> Java</a>
+                                <a href="course-python.html"><i class="fab fa-python"></i> Python</a>
+                                <a href="course-web.html"><i class="fab fa-html5"></i> HTML/CSS</a>
+                                <a href="course-js.html"><i class="fab fa-js-square"></i> JavaScript</a>
+                                <a href="course-php.html"><i class="fab fa-php"></i> PHP & MySQL</a>
+                            </div>
+                        </li>
+                        <li><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="contact.html#contactForm" class="btn enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero course-hero">
+            <div class="container">
+                <div class="course-hero-content">
+                    <div class="course-header">
+                        <div class="course-badge beginner">Beginner Friendly</div>
+                        <h1 class="course-title">Web Development <span class="highlight">Course</span></h1>
+                        <p class="course-subtitle">Build responsive websites with HTML5, CSS3, JavaScript. Learn modern frameworks like React, Bootstrap, and build full-stack web applications.</p>
+                        
+                        <div class="course-meta-info">
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <span class="meta-label">Duration</span>
+                                    <span class="meta-value">12 Weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <div>
+                                    <span class="meta-label">Level</span>
+                                    <span class="meta-value">Beginner to Intermediate</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <span class="meta-label">Mode</span>
+                                    <span class="meta-value">Online & Offline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <div>
+                                    <span class="meta-label">Projects</span>
+                                    <span class="meta-value">10+ Hands-on Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="course-cta">
+                            <div class="course-price">
+                                <span class="original-price">₹18,999</span>
+                                <span class="current-price">₹14,999</span>
+                                <span class="discount">21% OFF</span>
+                            </div>
+                            <div class="cta-buttons">
+                                <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now</a>
+                                <a href="#syllabus" class="btn btn-outline">View Syllabus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-hero-image">
+                        <div class="course-icon-large">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Web Development">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-overview-section">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>Course <span class="highlight">Overview</span></h2>
+                        <p>Web Development is one of the most in-demand skills in today's digital world. This comprehensive course takes you from complete beginner to job-ready web developer. You'll learn to build beautiful, responsive websites and web applications using modern technologies and best practices.</p>
+                        <p>The course covers frontend development (HTML, CSS, JavaScript, React) as well as backend basics, giving you a complete understanding of how web applications work from end to end.</p>
+                        
+                        <div class="key-features">
+                            <h3>What You'll Learn</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>HTML5 semantic markup and structure</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>CSS3 styling, Flexbox, and Grid</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Responsive web design and mobile-first approach</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>JavaScript ES6+ and DOM manipulation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>React.js for building interactive UIs</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Bootstrap framework for rapid prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Course Details</h3>
+                            <div class="details-list">
+                                <div class="detail-item">
+                                    <span class="detail-label">Start Date:</span>
+                                    <span class="detail-value">20th of Every Month</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Batch Timings:</span>
+                                    <span class="detail-value">Morning, Afternoon, Evening</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Total Hours:</span>
+                                    <span class="detail-value">144 Hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Mode:</span>
+                                    <span class="detail-value">Online & Classroom</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Certificate:</span>
+                                    <span class="detail-value">Yes (Industry Recognized)</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Placement Assistance:</span>
+                                    <span class="detail-value">Yes</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Instructor</h3>
+                            <div class="instructor-info">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Amit Patel">
+                                <div>
+                                    <h4>Amit Patel</h4>
+                                    <p>Senior Instructor</p>
+                                    <p>12+ years experience</p>
+                                </div>
+                            </div>
+                            <a href="faculty.html" class="instructor-link">View Profile <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-syllabus-section" id="syllabus">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">Syllabus</span></h2>
+                
+                <div class="syllabus-accordion">
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">01</span>
+                            <h3>HTML5 & CSS3 Fundamentals</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Web Development Basics and How Web Works</li>
+                                <li>HTML5 Semantic Elements and Structure</li>
+                                <li>Forms, Tables, and Multimedia Elements</li>
+                                <li>CSS3 Selectors, Properties, and Values</li>
+                                <li>Box Model, Positioning, and Layouts</li>
+                                <li>CSS Grid and Flexbox for Modern Layouts</li>
+                                <li>Responsive Design with Media Queries</li>
+                                <li><strong>Project:</strong> Personal Portfolio Website</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">02</span>
+                            <h3>JavaScript & DOM Manipulation</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>JavaScript Fundamentals (ES6+)</li>
+                                <li>Variables, Data Types, and Operators</li>
+                                <li>Functions, Objects, and Arrays</li>
+                                <li>DOM Selection and Manipulation</li>
+                                <li>Events and Event Handling</li>
+                                <li>Asynchronous JavaScript (Promises, Async/Await)</li>
+                                <li>APIs and Fetch for Data Retrieval</li>
+                                <li><strong>Project:</strong Interactive To-Do Application</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">03</span>
+                            <h3>Frontend Frameworks & Tools</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Bootstrap 5 Framework</li>
+                                <li>Responsive Grid System and Components</li>
+                                <li>Introduction to React.js</li>
+                                <li>Components, Props, and State</li>
+                                <li>React Hooks and Context API</li>
+                                <li>React Router for Navigation</li>
+                                <li>Git and GitHub for Version Control</li>
+                                <li><strong>Project:</strong> E-commerce Frontend with React</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">04</span>
+                            <h3>Advanced Concepts & Full Project</h3>
+                            <span class="module-duration">3 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Web Performance Optimization</li>
+                                <li>Accessibility (a11y) Best Practices</li>
+                                <li>SEO Fundamentals for Developers</li>
+                                <li>Web Hosting and Deployment</li>
+                                <li>Introduction to Backend Development</li>
+                                <li>REST APIs and JSON</li>
+                                <li>Career Preparation and Portfolio Building</li>
+                                <li><strong>Project:</strong> Full-stack Blog Application</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-projects-section">
+            <div class="container">
+                <h2 class="section-title">Hands-on <span class="highlight">Projects</span></h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Responsive portfolio showcasing your skills, projects, and contact information with modern design.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <h3>Interactive To-Do App</h3>
+                        <p>Feature-rich task management application with add, edit, delete, and filter functionality using JavaScript.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Store Frontend</h3>
+                        <p>Complete online store UI with product catalog, shopping cart, and checkout using React.js.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <h3>Blog Platform</h3>
+                        <p>Full-stack blog application with user authentication, posts, comments, and admin dashboard.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Restaurant Website</h3>
+                        <p>Responsive restaurant website with menu, reservation system, and contact form using Bootstrap.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <h3>Weather Dashboard</h3>
+                        <p>Weather application fetching data from API with location search and 5-day forecast display.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="audience-section">
+            <div class="container">
+                <h2 class="section-title">Who Should <span class="highlight">Enroll?</span></h2>
+                
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Complete Beginners</h3>
+                        <p>Anyone wanting to start a career in web development with no prior programming experience.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Designers</h3>
+                        <p>Graphic or UI/UX designers wanting to implement their designs as functional websites.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Career Changers</h3>
+                        <p>Professionals from other fields looking to transition into the high-demand tech industry.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Entrepreneurs</h3>
+                        <p>Startup founders wanting to build their own websites or better communicate with developers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="career-section">
+            <div class="container">
+                <h2 class="section-title">Career <span class="highlight">Opportunities</span></h2>
+                
+                <div class="career-grid">
+                    <div class="career-card">
+                        <h3>Frontend Developer</h3>
+                        <p>Average Salary: ₹4-15 LPA</p>
+                        <p>Build user interfaces and client-side functionality for websites and web applications.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>UI Developer</h3>
+                        <p>Average Salary: ₹5-18 LPA</p>
+                        <p>Specialize in implementing designs and creating visually appealing, responsive interfaces.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Web Designer</h3>
+                        <p>Average Salary: ₹3-12 LPA</p>
+                        <p>Design and create visually engaging websites with focus on user experience.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Full Stack Developer</h3>
+                        <p>Average Salary: ₹6-25 LPA</p>
+                        <p>Work on both frontend and backend development for complete web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-faq-section">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">FAQs</span></h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do I need any prior coding experience?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No prior coding experience is required. This course is designed for complete beginners. We start from the absolute basics and gradually progress to advanced topics. All you need is a computer and willingness to learn.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What's the difference between web design and web development?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Web design focuses on the visual aspects, user experience, and aesthetics of a website. Web development involves building the functional aspects using code. This course covers both: you'll learn to create beautiful designs and implement them with code.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Will I learn backend development in this course?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This course focuses primarily on frontend development (what users see and interact with). However, we cover backend basics, APIs, and how to connect frontend to backend services. For full backend development, check our Full Stack Development course.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What software/tools do I need?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You'll need a code editor (we recommend VS Code), a modern web browser (Chrome, Firefox), and Git for version control. All software is free. We provide complete installation and setup guidance in the first week.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Start Building Beautiful Websites Today!</h2>
+                    <p>Limited seats available for the next batch. Enroll now to secure your spot at the discounted price.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now at ₹14,999</a>
+                        <a href="contact.html" class="btn btn-outline">Schedule a Demo Class</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeMaster</span>
+                    </a>
+                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-courses">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="course-web.html">Web Development</a></li>
+                        <li><a href="course-python.html">Python Programming</a></li>
+                        <li><a href="course-js.html">JavaScript Mastery</a></li>
+                        <li><a href="course-fullstack.html">Full Stack Development</a></li>
+                        <li><a href="course-datascience.html">Data Science</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CodeMaster Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const moduleHeaders = document.querySelectorAll('.module-header');
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            moduleHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('i');
+                    
+                    moduleHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header) {
+                            const otherContent = otherHeader.nextElementSibling;
+                            const otherIcon = otherHeader.querySelector('i');
+                            otherContent.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        });
+    </script>
+</body>
+</html>

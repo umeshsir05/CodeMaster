@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | CodeMaster Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+     <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
+                                <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
+                                <a href="course-java.html"><i class="fab fa-java"></i> Java</a>
+                                <a href="course-python.html"><i class="fab fa-python"></i> Python</a>
+                                <a href="course-web.html"><i class="fab fa-html5"></i> HTML/CSS</a>
+                                <a href="course-js.html"><i class="fab fa-js-square"></i> JavaScript</a>
+                                <a href="course-php.html"><i class="fab fa-php"></i> PHP & MySQL</a>
+                            </div>
+                        </li>
+                        <li><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="contact.html#contactForm" class="btn enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Courses Hero Section -->
+        <section class="hero courses-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Explore Our <span class="highlight">Programming Courses</span></h1>
+                    <p class="hero-subtitle">Comprehensive courses designed for beginners to advanced learners. Master in-demand programming skills with hands-on training.</p>
+                    <div class="course-filter">
+                        <button class="filter-btn active" data-filter="all">All Courses</button>
+                        <button class="filter-btn" data-filter="beginner">Beginner</button>
+                        <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                        <button class="filter-btn" data-filter="advanced">Advanced</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- All Courses Section -->
+        <section class="all-courses-section">
+            <div class="container">
+                <div class="courses-grid" id="coursesGrid">
+                    <!-- C Programming -->
+                    <div class="course-detail-card" data-level="beginner">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fab fa-cuttlefish"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Beginner</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 8 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>C Programming</h3>
+                        <p class="course-description">Master the fundamentals of programming with C. Learn variables, loops, functions, pointers, and memory management.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> Hands-on Projects</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                            <span><i class="fas fa-check-circle"></i> Placement Assistance</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹12,999</span>
+                                <span class="current-price">₹9,999</span>
+                            </div>
+                            <a href="course-c.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- C++ Programming -->
+                    <div class="course-detail-card" data-level="intermediate">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fab fa-cuttlefish"></i><i class="fas fa-plus plus-icon"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 10 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>C++ Programming</h3>
+                        <p class="course-description">Learn object-oriented programming with C++. Master classes, inheritance, polymorphism, templates, and STL.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> OOP Concepts</span>
+                            <span><i class="fas fa-check-circle"></i> Real-world Projects</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹14,999</span>
+                                <span class="current-price">₹11,999</span>
+                            </div>
+                            <a href="course-cpp.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Java -->
+                    <div class="course-detail-card" data-level="intermediate">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 12 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>Java Programming</h3>
+                        <p class="course-description">Build enterprise applications with Java. Learn core Java, Spring Framework, Hibernate, and build REST APIs.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> Spring Framework</span>
+                            <span><i class="fas fa-check-circle"></i> Database Integration</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹16,999</span>
+                                <span class="current-price">₹13,999</span>
+                            </div>
+                            <a href="course-java.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Python -->
+                    <div class="course-detail-card" data-level="beginner">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Beginner</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 10 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>Python Programming</h3>
+                        <p class="course-description">Learn Python for web development, data science, and automation. Includes Django, Flask, and data analysis libraries.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> Django & Flask</span>
+                            <span><i class="fas fa-check-circle"></i> Data Science Basics</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹15,999</span>
+                                <span class="current-price">₹12,999</span>
+                            </div>
+                            <a href="course-python.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Web Development -->
+                    <div class="course-detail-card" data-level="beginner">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level beginner">Beginner</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 12 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p class="course-description">Build responsive websites with HTML5, CSS3, JavaScript. Learn modern frameworks like React and Bootstrap.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> Responsive Design</span>
+                            <span><i class="fas fa-check-circle"></i> JavaScript ES6+</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹18,999</span>
+                                <span class="current-price">₹14,999</span>
+                            </div>
+                            <a href="course-web.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript -->
+                    <div class="course-detail-card" data-level="intermediate">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 10 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>JavaScript Mastery</h3>
+                        <p class="course-description">Master modern JavaScript (ES6+), Node.js, React, and build full-stack applications with MongoDB.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> React & Node.js</span>
+                            <span><i class="fas fa-check-circle"></i> REST APIs</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹17,999</span>
+                                <span class="current-price">₹14,499</span>
+                            </div>
+                            <a href="course-js.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- PHP & MySQL -->
+                    <div class="course-detail-card" data-level="intermediate">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fab fa-php"></i>
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediate</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 10 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>PHP & MySQL</h3>
+                        <p class="course-description">Build dynamic websites with PHP and MySQL. Learn Laravel framework, authentication, and e-commerce development.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> Laravel Framework</span>
+                            <span><i class="fas fa-check-circle"></i> E-commerce Project</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹16,499</span>
+                                <span class="current-price">₹12,999</span>
+                            </div>
+                            <a href="course-php.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Full Stack Development -->
+                    <div class="course-detail-card" data-level="advanced">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level advanced">Advanced</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 24 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>Full Stack Development</h3>
+                        <p class="course-description">Become a full-stack developer. Master frontend, backend, databases, deployment, and DevOps basics.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> MERN Stack</span>
+                            <span><i class="fas fa-check-circle"></i> DevOps Basics</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹35,999</span>
+                                <span class="current-price">₹28,999</span>
+                            </div>
+                            <a href="course-fullstack.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Science with Python -->
+                    <div class="course-detail-card" data-level="advanced">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="course-meta">
+                                <span class="course-level advanced">Advanced</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> 16 Weeks</span>
+                            </div>
+                        </div>
+                        <h3>Data Science</h3>
+                        <p class="course-description">Learn data analysis, visualization, machine learning with Python, Pandas, NumPy, Scikit-learn, and TensorFlow.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-check-circle"></i> Machine Learning</span>
+                            <span><i class="fas fa-check-circle"></i> Data Visualization</span>
+                            <span><i class="fas fa-check-circle"></i> Certificate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹24,999</span>
+                                <span class="current-price">₹19,999</span>
+                            </div>
+                            <a href="course-datascience.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="no-courses-message" id="noCoursesMessage" style="display: none;">
+                    <h3>No courses found for the selected filter.</h3>
+                    <p>Try selecting a different level or view all courses.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Learning Paths Section -->
+        <section class="learning-paths-section">
+            <div class="container">
+                <h2 class="section-title">Recommended <span class="highlight">Learning Paths</span></h2>
+                
+                <div class="paths-grid">
+                    <div class="path-card">
+                        <div class="path-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="path-duration">6-8 Months</span>
+                        </div>
+                        <div class="path-courses">
+                            <span class="path-course">1. Web Development</span>
+                            <span class="path-course">2. JavaScript Mastery</span>
+                            <span class="path-course">3. React.js</span>
+                        </div>
+                        <p class="path-description">Become a frontend expert with modern JavaScript frameworks and responsive design principles.</p>
+                        <a href="#" class="path-link">View Path Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="path-card">
+                        <div class="path-header">
+                            <h3>Backend Developer</h3>
+                            <span class="path-duration">7-9 Months</span>
+                        </div>
+                        <div class="path-courses">
+                            <span class="path-course">1. Python Programming</span>
+                            <span class="path-course">2. PHP & MySQL</span>
+                            <span class="path-course">3. Java Programming</span>
+                        </div>
+                        <p class="path-description">Master server-side programming, databases, APIs, and build scalable backend systems.</p>
+                        <a href="#" class="path-link">View Path Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="path-card">
+                        <div class="path-header">
+                            <h3>Full Stack Developer</h3>
+                            <span class="path-duration">9-12 Months</span>
+                        </div>
+                        <div class="path-courses">
+                            <span class="path-course">1. Web Development</span>
+                            <span class="path-course">2. JavaScript Mastery</span>
+                            <span class="path-course">3. Full Stack Development</span>
+                        </div>
+                        <p class="path-description">End-to-end web development skills from frontend to backend, databases, and deployment.</p>
+                        <a href="#" class="path-link">View Path Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Course Comparison -->
+        <section class="comparison-section">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">Comparison</span></h2>
+                
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Duration</th>
+                                <th>Level</th>
+                                <th>Projects</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>C Programming</td>
+                                <td>8 Weeks</td>
+                                <td><span class="level-badge beginner">Beginner</span></td>
+                                <td>5+ Projects</td>
+                                <td><span class="price">₹9,999</span></td>
+                                <td><a href="course-c.html" class="btn btn-small">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td>C++ Programming</td>
+                                <td>10 Weeks</td>
+                                <td><span class="level-badge intermediate">Intermediate</span></td>
+                                <td>7+ Projects</td>
+                                <td><span class="price">₹11,999</span></td>
+                                <td><a href="course-cpp.html" class="btn btn-small">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td>Java Programming</td>
+                                <td>12 Weeks</td>
+                                <td><span class="level-badge intermediate">Intermediate</span></td>
+                                <td>8+ Projects</td>
+                                <td><span class="price">₹13,999</span></td>
+                                <td><a href="course-java.html" class="btn btn-small">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td>Python Programming</td>
+                                <td>10 Weeks</td>
+                                <td><span class="level-badge beginner">Beginner</span></td>
+                                <td>6+ Projects</td>
+                                <td><span class="price">₹12,999</span></td>
+                                <td><a href="course-python.html" class="btn btn-small">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td>Full Stack Development</td>
+                                <td>24 Weeks</td>
+                                <td><span class="level-badge advanced">Advanced</span></td>
+                                <td>12+ Projects</td>
+                                <td><span class="price">₹28,999</span></td>
+                                <td><a href="course-fullstack.html" class="btn btn-small">Details</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="courses-faq-section">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">FAQs</span></h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-column">
+                        <div class="faq-item">
+                            <h4>Do I need prior programming experience?</h4>
+                            <p>Most beginner courses require no prior experience. For intermediate and advanced courses, we recommend completing prerequisites or having basic programming knowledge.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>What is the class schedule?</h4>
+                            <p>We offer flexible batches: Morning (9 AM - 12 PM), Afternoon (2 PM - 5 PM), Evening (6 PM - 9 PM), and weekend batches. You can choose what works best for you.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Are courses available online?</h4>
+                            <p>Yes, all courses are available both online and offline. Online classes include live sessions, recorded lectures, and interactive doubt-solving.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-column">
+                        <div class="faq-item">
+                            <h4>What is the refund policy?</h4>
+                            <p>We offer a 7-day refund policy from the course start date. If you're not satisfied with the course, you can request a full refund within this period.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Do you provide placement assistance?</h4>
+                            <p>Yes, we provide complete placement assistance including resume building, interview preparation, and connecting with our hiring partners.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Can I pay in installments?</h4>
+                            <p>Yes, we offer flexible payment options including EMI and installment plans. Contact our admission office for details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="courses-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Not Sure Which Course is Right for You?</h2>
+                    <p>Book a free counseling session with our experts to identify the best learning path based on your goals and background.</p>
+                    <a href="contact.html" class="btn btn-primary">Book Free Counseling</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeMaster</span>
+                    </a>
+                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-courses">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="course-python.html">Python Programming</a></li>
+                        <li><a href="course-web.html">Web Development</a></li>
+                        <li><a href="course-java.html">Java Programming</a></li>
+                        <li><a href="course-fullstack.html">Full Stack Development</a></li>
+                        <li><a href="course-datascience.html">Data Science</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CodeMaster Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Courses page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Course filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const courseCards = document.querySelectorAll('.course-detail-card');
+            const noCoursesMessage = document.getElementById('noCoursesMessage');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Filter courses
+                    let visibleCount = 0;
+                    courseCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-level') === filter) {
+                            card.style.display = 'block';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    // Show/hide no courses message
+                    if (visibleCount === 0) {
+                        noCoursesMessage.style.display = 'block';
+                    } else {
+                        noCoursesMessage.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

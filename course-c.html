@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Course | CodeMaster Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="course-c.html"><i class="fab fa-cuttlefish"></i> C Programming</a>
+                                <a href="course-cpp.html"><i class="fab fa-cuttlefish"></i> C++</a>
+                                <a href="course-java.html"><i class="fab fa-java"></i> Java</a>
+                                <a href="course-python.html"><i class="fab fa-python"></i> Python</a>
+                                <a href="course-web.html"><i class="fab fa-html5"></i> HTML/CSS</a>
+                                <a href="course-js.html"><i class="fab fa-js-square"></i> JavaScript</a>
+                                <a href="course-php.html"><i class="fab fa-php"></i> PHP & MySQL</a>
+                            </div>
+                        </li>
+                        <li><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="contact.html#contactForm" class="btn enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero course-hero">
+            <div class="container">
+                <div class="course-hero-content">
+                    <div class="course-header">
+                        <div class="course-badge beginner">Beginner Friendly</div>
+                        <h1 class="course-title">C Programming <span class="highlight">Course</span></h1>
+                        <p class="course-subtitle">Master the fundamentals of programming with C. Learn variables, loops, functions, pointers, and memory management from scratch.</p>
+                        
+                        <div class="course-meta-info">
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <span class="meta-label">Duration</span>
+                                    <span class="meta-value">8 Weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <div>
+                                    <span class="meta-label">Level</span>
+                                    <span class="meta-value">Beginner</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <span class="meta-label">Mode</span>
+                                    <span class="meta-value">Online & Offline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="meta-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <div>
+                                    <span class="meta-label">Projects</span>
+                                    <span class="meta-value">5+ Hands-on Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="course-cta">
+                            <div class="course-price">
+                                <span class="original-price">₹12,999</span>
+                                <span class="current-price">₹9,999</span>
+                                <span class="discount">23% OFF</span>
+                            </div>
+                            <div class="cta-buttons">
+                                <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now</a>
+                                <a href="#syllabus" class="btn btn-outline">View Syllabus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-hero-image">
+                        <div class="course-icon-large">
+                            <i class="fab fa-cuttlefish"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="C Programming">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-overview-section">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>Course <span class="highlight">Overview</span></h2>
+                        <p>C Programming is the foundation of modern computing. This course provides a solid introduction to programming concepts using the C language, which forms the basis for many other programming languages including C++, Java, and Python.</p>
+                        <p>You'll learn not just syntax but also how computers actually work at a fundamental level. The course emphasizes problem-solving skills and logical thinking, which are essential for any programmer.</p>
+                        
+                        <div class="key-features">
+                            <h3>What You'll Learn</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>C fundamentals and syntax</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Pointers and memory management</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Data structures and algorithms basics</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>File handling and I/O operations</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Debugging and problem-solving techniques</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Building efficient algorithms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Course Details</h3>
+                            <div class="details-list">
+                                <div class="detail-item">
+                                    <span class="detail-label">Start Date:</span>
+                                    <span class="detail-value">10th of Every Month</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Batch Timings:</span>
+                                    <span class="detail-value">Morning, Afternoon, Evening</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Total Hours:</span>
+                                    <span class="detail-value">96 Hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Mode:</span>
+                                    <span class="detail-value">Online & Classroom</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Certificate:</span>
+                                    <span class="detail-value">Yes (Industry Recognized)</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Placement Assistance:</span>
+                                    <span class="detail-value">Yes</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Instructor</h3>
+                            <div class="instructor-info">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Rajesh Kumar">
+                                <div>
+                                    <h4>Rajesh Kumar</h4>
+                                    <p>Founder & Senior Instructor</p>
+                                    <p>15+ years experience</p>
+                                </div>
+                            </div>
+                            <a href="faculty.html" class="instructor-link">View Profile <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-syllabus-section" id="syllabus">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">Syllabus</span></h2>
+                
+                <div class="syllabus-accordion">
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">01</span>
+                            <h3>C Programming Basics</h3>
+                            <span class="module-duration">2 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Introduction to Programming and C Language</li>
+                                <li>Setting up Development Environment</li>
+                                <li>Structure of C Program</li>
+                                <li>Variables, Data Types, and Constants</li>
+                                <li>Operators and Expressions</li>
+                                <li>Input/Output Functions</li>
+                                <li>Control Statements (if-else, switch)</li>
+                                <li><strong>Project:</strong> Simple Calculator</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">02</span>
+                            <h3>Loops, Arrays & Functions</h3>
+                            <span class="module-duration">2 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Looping Statements (for, while, do-while)</li>
+                                <li>Break and Continue Statements</li>
+                                <li>Arrays (1D, 2D, Multi-dimensional)</li>
+                                <li>Strings and String Functions</li>
+                                <li>Functions (Declaration, Definition, Call)</li>
+                                <li>Function Prototypes and Recursion</li>
+                                <li>Storage Classes</li>
+                                <li><strong>Project:</strong> Student Grade Calculator</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">03</span>
+                            <h3>Pointers & Memory Management</h3>
+                            <span class="module-duration">2 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Introduction to Pointers</li>
+                                <li>Pointer Arithmetic</li>
+                                <li>Pointers and Arrays</li>
+                                <li>Pointers and Functions</li>
+                                <li>Dynamic Memory Allocation (malloc, calloc, realloc, free)</li>
+                                <li>Memory Management Techniques</li>
+                                <li>Common Pointer Errors and Debugging</li>
+                                <li><strong>Project:</strong> Dynamic Array Implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="syllabus-module">
+                        <button class="module-header">
+                            <span class="module-number">04</span>
+                            <h3>Advanced Concepts & Projects</h3>
+                            <span class="module-duration">2 Weeks</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="module-content">
+                            <ul>
+                                <li>Structures and Unions</li>
+                                <li>File Handling (Text and Binary Files)</li>
+                                <li>Preprocessor Directives</li>
+                                <li>Command Line Arguments</li>
+                                <li>Introduction to Data Structures</li>
+                                <li>Algorithm Complexity Analysis</li>
+                                <li>Debugging Techniques and Tools</li>
+                                <li><strong>Project:</strong> Library Management System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-projects-section">
+            <div class="container">
+                <h2 class="section-title">Hands-on <span class="highlight">Projects</span></h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Scientific Calculator</h3>
+                        <p>Build a scientific calculator with advanced mathematical functions and memory operations.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Library Management System</h3>
+                        <p>Complete library system with book search, issue, return, and inventory management.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Console Games</h3>
+                        <p>Create classic games like Tic-Tac-Toe, Snake, and Hangman with console graphics.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h3>Banking System</h3>
+                        <p>Simulate banking operations with account management, transactions, and balance tracking.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-sort-amount-down"></i>
+                        </div>
+                        <h3>Sorting Visualizer</h3>
+                        <p>Visualize different sorting algorithms with execution time comparison and analysis.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Student Database</h3>
+                        <p>File-based student record system with CRUD operations and search functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="audience-section">
+            <div class="container">
+                <h2 class="section-title">Who Should <span class="highlight">Enroll?</span></h2>
+                
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>CS/IT Students</h3>
+                        <p>Computer science students needing strong foundation in programming for academics and placements.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Aspiring Programmers</h3>
+                        <p>Beginners wanting to start programming career with strong fundamentals in C language.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Embedded Systems Enthusiasts</h3>
+                        <p>Those interested in embedded systems, IoT, or system programming where C is essential.</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Competitive Programmers</h3>
+                        <p>Students preparing for coding competitions where C is often the language of choice for efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="career-section">
+            <div class="container">
+                <h2 class="section-title">Career <span class="highlight">Opportunities</span></h2>
+                
+                <div class="career-grid">
+                    <div class="career-card">
+                        <h3>C Developer</h3>
+                        <p>Average Salary: ₹4-12 LPA</p>
+                        <p>Develop system software, drivers, and low-level applications using C programming.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Embedded Systems Engineer</h3>
+                        <p>Average Salary: ₹5-15 LPA</p>
+                        <p>Work on IoT devices, microcontrollers, and firmware development using C.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>System Programmer</h3>
+                        <p>Average Salary: ₹6-18 LPA</p>
+                        <p>Develop operating systems, compilers, and system-level software.</p>
+                    </div>
+                    
+                    <div class="career-card">
+                        <h3>Game Developer (C/C++)</h3>
+                        <p>Average Salary: ₹5-20 LPA</p>
+                        <p>Work on game engines and performance-critical game components.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-faq-section">
+            <div class="container">
+                <h2 class="section-title">Course <span class="highlight">FAQs</span></h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Is C programming still relevant today?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! C remains one of the most important programming languages. It's used in operating systems (Linux, Windows), embedded systems, game development, and system programming. Learning C provides a deep understanding of how computers work at a fundamental level.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What is the advantage of learning C before other languages?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>C teaches fundamental programming concepts like memory management, pointers, and low-level operations that are abstracted away in higher-level languages. This foundation makes learning languages like C++, Java, and Python much easier and gives you a deeper understanding of how programs actually work.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do I need any prior programming knowledge?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No prior programming experience is required. This course is designed for complete beginners. We start from the very basics and gradually progress to advanced concepts. Basic computer literacy (typing, file management) is all that's needed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What software will I need for this course?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You'll need a C compiler. We recommend Code::Blocks or Dev-C++ for beginners. For Linux/Mac users, GCC is already available. We provide complete installation guidance and setup assistance in the first class.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Start Your Programming Journey with C!</h2>
+                    <p>Limited seats available for the next batch. Enroll now to secure your spot at the discounted price.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html#contactForm" class="btn btn-primary">Enroll Now at ₹9,999</a>
+                        <a href="contact.html" class="btn btn-outline">Schedule a Demo Class</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeMaster</span>
+                    </a>
+                    <p>Master programming languages and web technologies with our comprehensive courses taught by industry experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-courses">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="course-c.html">C Programming</a></li>
+                        <li><a href="course-python.html">Python Programming</a></li>
+                        <li><a href="course-web.html">Web Development</a></li>
+                        <li><a href="course-java.html">Java Programming</a></li>
+                        <li><a href="course-fullstack.html">Full Stack Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Code City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@codemaster.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CodeMaster Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const moduleHeaders = document.querySelectorAll('.module-header');
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            moduleHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('i');
+                    
+                    moduleHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header) {
+                            const otherContent = otherHeader.nextElementSibling;
+                            const otherIcon = otherHeader.querySelector('i');
+                            otherContent.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.style.maxHeight = null;
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        });
+    </script>
+</body>
+</html>
